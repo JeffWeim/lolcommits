@@ -18,6 +18,7 @@ Gem::Specification.new do |s|
   developers. `git blame` has never been so much fun.
 DESC
 
+  # TODO: remove me on or after 1st April 2018
   s.post_install_message = <<-POSTINSTALL
   -------------------------------------------------------------------------------
 
@@ -64,7 +65,7 @@ POSTINSTALL
   s.add_runtime_dependency('git', '~> 1.3.0')
 
   # included plugins
-  s.add_runtime_dependency('lolcommits-loltext', '~> 0.0.5')
+  s.add_runtime_dependency('lolcommits-loltext', '~> 0.0.6')
 
   # development & test gems
   s.add_development_dependency('rdoc')

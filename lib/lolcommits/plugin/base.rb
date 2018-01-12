@@ -63,17 +63,11 @@ module Lolcommits
 
       def enabled?
         # legacy configs (< 0.9.9) used a string key
-        configuration[:enabled] || configuration['enabled']
+        (configuration[:enabled] || configuration['enabled']) == true
       end
 
       # check config is valid
       def valid_configuration?
-        !configuration.empty?
-      end
-
-      # empty plugin configuration
-      # TODO: remove this method in after 0.9.9 release
-      def configured?
         !configuration.empty?
       end
 
